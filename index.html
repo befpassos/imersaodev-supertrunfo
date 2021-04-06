@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Trunfo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title"><img src="https://fontmeme.com/permalink/210331/b62973569930783dcd4a7693736ba13e.png" alt="fall-guys-font" border="0"></h1>
+        <button onclick="sortearCarta()" id="btnSortear">Sorteie sua Carta</button>
+        <form id="form">
+            <h2>Escolha o seu Atributo</h2>
+            <div class="wrapper">
+                <div id="placar"></div>
+                <div id="quantidade-cartas"></div>
+                <div id="cartas">
+                    <div id="carta-jogador" class="carta"></div>
+                    <div id="carta-maquina" class="carta"></div>
+                </div>
+                <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+            </div>
+            <div id="resultado"></div>
+            <button type="button" id="btnProximaRodada" onclick="proximaRodada()" disabled="true">Próxima Rodada</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
